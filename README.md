@@ -39,6 +39,7 @@ mv phpMyAdmin-5.2.2-all-languages /var/www/phpmyadmin
 
 unzip drupal-10.0.5.zip
 mv drupal-10.0.5 /var/www/drupal
+
 ![image](https://github.com/user-attachments/assets/cb3914f6-0e73-4bf8-b752-b272ef24b78d)
 
 ### 5. Создание базы данных и пользователя для Drupal
@@ -48,6 +49,7 @@ CREATE DATABASE drupal_db;
 CREATE USER 'drupal_user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON drupal_db.* TO 'drupal_user'@'localhost';
 FLUSH PRIVILEGES;
+
 ![image](https://github.com/user-attachments/assets/01a881ab-6e4a-425e-a7ca-950223af073f)
 
 ### 6. Настройка виртуальных хостов для PhpMyAdmin и Drupal
@@ -79,6 +81,7 @@ FLUSH PRIVILEGES;
 После настройки Apache проверяем доступность сайтов через браузер:
 - [PhpMyAdmin](http://phpmyadmin.localhost)
 - [Drupal](http://drupal.localhost)
+  
 ![image](https://github.com/user-attachments/assets/d221b0c4-327b-4185-808f-7154d64c382e)
 
 ## Вывод по работе
