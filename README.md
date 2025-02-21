@@ -27,7 +27,6 @@ qemu-img create -f qcow2 debian.qcow2 8G
 Запускаем установку Debian на виртуальную машину:
 
 qemu-system-x86_64 -hda debian.qcow2 -cdrom dvd/debian.iso -boot d -m 2G
-![image](https://github.com/user-attachments/assets/cd224f83-2207-407d-8c6c-f4c8e15ceb9a)
 ![image](https://github.com/user-attachments/assets/317fe73c-ecc2-4f63-b030-a15c254fc0b3)
 > **Примечание:** На этапе установки рекомендуется выбирать минимальную установку системы, чтобы снизить нагрузку на ресурсы виртуальной машины и избежать установки ненужных пакетов.
 
